@@ -3,6 +3,11 @@
     box-sizing: border-box;
 }
 
+/* Prevent overflow everywhere */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 html{
     background-color: black;
     color: azure;
@@ -30,6 +35,7 @@ header{
 }
 
 header span{
+    font-size:1.5rem;
     font-size:1.5rem;
 }
 
