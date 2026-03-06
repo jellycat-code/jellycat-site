@@ -3,10 +3,6 @@
     box-sizing: border-box;
 }
 
-/* Prevent overflow everywhere */
-*, *::before, *::after {
-    box-sizing: border-box;
-}
 
 html{
     background-color: black;
@@ -35,7 +31,6 @@ header{
 }
 
 header span{
-    font-size:1.5rem;
     font-size:1.5rem;
 }
 
@@ -90,12 +85,6 @@ video{
     width: 20rem;
     border-radius: 0.5rem;
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-}
-
-.media{
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 2rem;
 }
 
 span{
