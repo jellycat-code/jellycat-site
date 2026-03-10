@@ -15,6 +15,13 @@ html{
 body{
     width: 100%;
     margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1;
 }
 
 header{
@@ -36,7 +43,7 @@ header span{
 
 h1{
     text-align: center;
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 h4{
@@ -48,7 +55,8 @@ p{
     padding: 0.5rem;
     width: 65%;
     text-align: left;
-    line-height: 1.5rem;
+    margin: 0 auto;
+    line-height: 1.5;
 }
 
 custom-head{
@@ -64,27 +72,22 @@ custom-head{
     margin-bottom: 1.5rem;
 }
 
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
 table{
     border: 2px solid white;
     background-color:hsl(248, 33%, 35%);
-    position:relative;
-    left: 15%;
     width: 70%;
     padding: 0.5rem;
-    margin-top: 1.2rem;
-    margin-bottom: 1.6rem;
+    margin: 1.5rem auto;
     line-height:1.5;
     border-radius: 3em;
     border-spacing: 0;
     vertical-align: middle;
     text-align: center;
-    box-shadow: inset;
-}
-
-video{
-    width: 20rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
 }
 
 span{
@@ -96,6 +99,14 @@ span{
 ul{
     text-align: left;
     line-height: 1.5;
+    width: 65%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+ul ul {
+    width: 100%;
+    margin: 0;
 }
 
 li::marker{
@@ -115,7 +126,7 @@ li::marker{
 .tableheading{
     font-weight: bold;
     font-size: 1.5rem;
-    line-height: 2rem;
+    line-height: 2;
 }
 
 /* Link Styling */
@@ -176,11 +187,12 @@ button{
     padding: 0.5rem 1rem 0.5rem 1rem;
     border: none;
     cursor: pointer;
+    width: 10%;
 }
 
 /* Footer Styling */
 footer{
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     text-align: center;
     color: gray;
@@ -199,11 +211,12 @@ footer p{
    ========================= */
 
 @media screen and (max-width: 768px){
-
+    
     /* Prevent giant headings */
     h1{
-        font-size: 1.2 rem;
+        font-size: 2.5rem;
         padding: 0 10px;
+        margin: 2rem auto 1rem auto;
     }
 
     h4{
@@ -249,19 +262,22 @@ footer p{
     /* Forms usable on phones */
     input,
     textarea{
-        width: 100%;
+        width: 80%;
     }
 
     button{
-        width: 100%;
-        padding: 0.9rem;
-        font-size: 1.1rem;
+        width: 50%;
+        padding: 0.3rem 0.2rem;
+        font-size: 0.9rem;
     }
 
-    /* Lists padding */
-    ul{
-        padding: 0 18px;
-    }
+    /* Lists */
+ul {
+    padding: 0 18px;
+    margin-left: 0.5rem;
+    max-width: 100%;
+    width: 100%;
+}
 
     footer{
         padding: 1rem;
